@@ -10,7 +10,7 @@ LOG_DIR=~/buildAgent/logs
 
 env
 
-cp -r /cdrom/buildAgent ~/
+cp -r /home/vagrant/buildAgent ~/
 
 check() {
    if [[ $? != 0 ]]; then

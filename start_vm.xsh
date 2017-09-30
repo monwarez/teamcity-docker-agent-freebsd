@@ -19,3 +19,4 @@ with open("env","w") as file:
 chmod +x env
 
 vagrant up --provider=virtualbox
+vagrant halt

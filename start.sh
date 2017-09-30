@@ -2,7 +2,10 @@
 #generate ~/.bash_profile with forwarded env vars from docker container
 if [ -e /provisioned ]
 then
-  /usr/local/bin/bash $HOME/env
-  /usr/local/bin/bash $HOME/tc.sh
+  echo "starting teamcity"
+  /usr/local/bin/bash /home/vagrant/env
+  /usr/local/bin/bash /home/vagrant/tc.sh
+else
+ echo "not provisioned yet"
 fi
 
