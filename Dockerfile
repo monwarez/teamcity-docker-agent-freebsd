@@ -12,6 +12,8 @@ ADD start.sh /vm/
 ADD tc.sh /vm/
 ADD bootstrap.sh /vm/
 ADD Vagrantfile /vm/
+ADD FreeBSD.conf /vm/
+ADD FreeBSD-latest.conf /vm/
 
 ADD https://teamcity.jetbrains.com/update/buildAgent.zip /vm/
 RUN unzip /vm/buildAgent.zip -d /vm/buildAgent/ && \

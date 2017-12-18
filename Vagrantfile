@@ -69,6 +69,9 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+  config.vm.provision "file", source: "/vm/FreeBSD.conf", destination: "$HOME/FreeBSD.conf"
+  config.vm.provision "file", source: "/vm/FreeBSD-latest.conf", destination: "$HOME/FreeBSD-latest.conf"
+
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.provision "file", source: "/vm/buildAgent", destination: "$HOME/buildAgent"
   config.vm.provision "file", source: "/vm/tc.sh", destination: "$HOME/tc.sh"
